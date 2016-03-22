@@ -1,0 +1,6 @@
+# Sequel Database Configuration
+
+development: "postgres://dmitry@localhost/predix_sinatra_starter_development"
+test: "postgres://dmitry@localhost/predix_sinatra_starter_test"
+production: "postgres://dmitry@localhost/predix_sinatra_starter_production"
+
