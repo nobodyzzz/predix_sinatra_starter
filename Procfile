@@ -1,1 +1,1 @@
-rackup config.ru
+web: rackup config.ru
