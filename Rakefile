@@ -16,5 +16,10 @@ namespace :db do
   task :connect => :environment do
     require "./config/initializers/database"
   end
+
+  task :environment do
+    require 'sequel'
+    ENV['RACK_ENV'] ||= 'development'
+  end
 end
 
