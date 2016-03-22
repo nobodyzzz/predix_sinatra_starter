@@ -1,5 +1,5 @@
 applications:
   - name: sinatra-app # Step 1: Change your application name
     buildpack: https://github.com/cloudfoundry/ruby-buildpack
-    memory: 64M
+    memory: 512M
     stack: cflinuxfs2
