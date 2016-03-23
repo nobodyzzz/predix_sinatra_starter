@@ -1,2 +1,4 @@
 .byebug_history
 cf
+
+!config/database.yml
