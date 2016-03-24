@@ -6,6 +6,10 @@
     <%= DB[:items].map(:name)  %>
 
   </p>
+  <p>
+    <%= REDIS.get('chunky') %>
+    <%= REDIS.connected? %>
+  </p>
 </div>
 
 <div class="sidebar">
