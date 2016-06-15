@@ -1,5 +1,15 @@
+declared-services:
+  sinatra-postgres-test:
+    label: postgres
+    plan: shared-nr
+  sinatra-redis-test:
+    label: redis-1
+    plan: shared-vm
 applications:
   - name: sinatra-app # Step 1: Change your application name
     buildpack: https://github.com/cloudfoundry/ruby-buildpack
     memory: 512M
     stack: cflinuxfs2
+    services:
+      - sinatra-postgres-test
+      - sinatra-redis-test
